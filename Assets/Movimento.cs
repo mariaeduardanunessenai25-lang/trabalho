@@ -1,0 +1,39 @@
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
+
+public class Movimento : MonoBehaviour
+{
+    int numero = 1;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey("d"))
+        {
+
+            transform.Translate(0.05f, 0, 0);
+        }
+
+        if (Input.GetKey("a"))
+        transform.Translate(-0.05f, 0, 0);
+
+        if (Input.GetKey("space"))
+        
+        transform.Translate(0, 0.05f, 0);
+
+        if (Physics.CheckSphere(transform.position, 1f))
+            transform.Translate(0, -0.05f, 0);
+
+
+
+
+
+
+    }
+}
