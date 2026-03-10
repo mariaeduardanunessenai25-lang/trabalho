@@ -21,14 +21,19 @@ public class Movimento : MonoBehaviour
         }
 
         if (Input.GetKey("a"))
+        {
+
+
+
+        
         transform.Translate(-0.05f, 0, 0);
+        
+        
+     
 
         if (Input.GetKey("space"))
         
-        transform.Translate(0, 0.05f, 0);
-
-        if (Physics.CheckSphere(transform.position, 1f))
-            transform.Translate(0, -0.05f, 0);
+        transform.Translate ;
 
 
 
